@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcard Viewer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Flashcard Viewer</h1>
+        
+        <div class="flashcard-container">
+            <div class="flashcard">
+                <div class="flashcard-inner">
+                    <div class="flashcard-front">
+                        <h2>Question</h2>
+                        <p>What is the capital of France?</p>
+                        <div class="flip-hint">
+                            <i class="fas fa-sync-alt"></i>
+                            <span>Click or press SPACE to flip</span>
+                        </div>
+                    </div>
+                    <div class="flashcard-back">
+                        <h2>Answer</h2>
+                        <p>Paris</p>
+                        <div class="flip-hint">
+                            <i class="fas fa-sync-alt"></i>
+                            <span>Click or press SPACE to flip back</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button class="btn know-btn">
+                <i class="fas fa-check"></i>
+                Know (K)
+            </button>
+            <button class="btn dont-know-btn">
+                <i class="fas fa-times"></i>
+                Review (R)
+            </button>
+        </div>
+
+        <div class="progress">
+            <span class="current-card">1</span> / <span class="total-cards">10</span>
+        </div>
+
+        <div class="keyboard-hints">
+            <p>Keyboard Shortcuts:</p>
+            <ul>
+                <li>SPACE - Flip card</li>
+                <li>← → - Navigate cards</li>
+                <li>K - Mark as known</li>
+                <li>R - Mark for review</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
